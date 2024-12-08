@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!------------------------------Liens Js & Css--------------------------------------------->
+    <link rel="stylesheet" type="text/css" href="Style/Style.css">
+    <link rel="stylesheet" type="text/js" href="Script/Script.js">
+    <!---------------------------- Font ------------------------------------------------------->
+    <link href="https://fonts.cdnfonts.com/css/pokemon-solid" rel="stylesheet">
+    <!-------------------------------------- Favicon ------------------------------------------>
+    <link rel="icon" type="image/png" sizes="32x32" href="Style/pokeball.png">
+    <!---------------------------------------- Titre ------------------------------------------>
+    <title>Le Mini Pokédex</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>Le Mini Pokedex</h1>
+    </header>
+
+    <main>
+        <div class="search">
+            <label for="id-pokemon">ID du Pokémon (de 1 à 893):</label>
+            <input id="id-pokemon" type="number" min="1" max="893">
+            <input id="search-button" type="button" value="Chercher">
+        </div>
+        <div class="result">
+            <div class="pokemon-card">
+                <h2 class="pokemon-name"></h2>
+                <div class="capture-rate">Taux de Capture : <span>190</span> %</div>
+                <div class="pokemon-family">Famille : <span>Polémon Souris</span></div>
+                <div class="detail">
+                    <div class="description"></div>
+                    <img class="pokemon-picture"
+                        src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/001.png" />
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <script src="Script/Script.js"></script>
+</body>
+
+</html>
